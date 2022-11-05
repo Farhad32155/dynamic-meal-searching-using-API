@@ -9,7 +9,7 @@ const searchFood = () => {
     document.getElementById('error-message').style.display = 'none';
 
     if (searchText == '') {
-        //please write something to display
+        //please write something to display-few edge cases left-like try catch
     }
     else {
 
@@ -31,8 +31,7 @@ const displayError = error => {
 
 const displaySearchResult = meals => {
     const searchResult = document.getElementById('search-result');
-    searchResult.innerHTML = '';//not recomended---memory leak something issue with it
-    //searchResult.textContent = '';//etateo jamela ache
+    searchResult.innerHTML = '';
 
     if (meals.length == 0) {
         //show no result found
